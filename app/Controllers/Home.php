@@ -32,6 +32,26 @@ class Home extends BaseController
 		$js = str_replace("\r\n", '', $js);
 		return $js;
 	}
+
+	private function randomString($length = 1) {
+		$chars = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890';
+		$c = '';
+		for($i = 0; $i < $length; $i++) {
+			$c .= $chars[random_int(0, strlen($chars) - 1)];
+		}
+		return $c;
+	}
+
+	public function view() {
+		header('Content-Type: text/html');
+		$icon = base_url('favicon.ico');
+		$data = [
+			'appname' => 'Github Widget',
+			'icon' => "{$icon}",
+			'random_string' => $this->randomString(5)
+		];
+		return view('land.php', $data);
+	}
 	
 	public function index() {
 		$jquery = $this->getjquery();
