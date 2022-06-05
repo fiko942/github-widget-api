@@ -160,35 +160,38 @@ window.onload = () => {
 	};
 	
 	const divContainerStyle = `
-		padding: 5px 13px;
-		background: #fff;
-		position: absolute;
-		z-index: 99999999;
-		overflow: hidden;
+		padding: 5px 13px !important;
+		background: #fff !important;
+		position: absolute !important;
+		z-index: 99999999 !important;
+		overflow: hidden !important;
 		transition: 0.2s ease-in-out all !important;
-		border-radius: 15px;
-		box-shadow: 1px 1px 2px #000;
-		border: none;
-		width: fit-content;
-		height: fit-content;
-		max-width: 100vh;
-		display: flex;
-		align-items: center;
+		border-radius: 15px !important;
+		box-shadow: 1px 1px 2px #000 !important;
+		border: none !important;
+		width: fit-content !important;
+		height: fit-content !important;
+		max-width: 100vh !important;
+		display: flex !important;
+		align-items: center !important;
+		color: #000 !important;
+		position: fixed !important;
 	`;
 	
 	const imgAvatarStyle = `
-		width: 50px;
-		height: 50px;
-		border-radius: 150px;
-		background: #16ACAE;
-		border: .5px solid #000;
-		box-shadow: .5px  .5px 3px #000;
-		transition: 0.2s ease-in-out all;
+		width: 50px !important;
+		height: 50px !important;
+		border-radius: 150px !important; 
+		background: #16ACAE !important;
+		border: .5px solid #000 !important;
+		box-shadow: .5px  .5px 3px #000 !important;
+		transition: 0.2s ease-in-out all !important;
 	`;
 	
 	const rightSideStyle = `
-		font-family: 'Segoe UI';
-		margin-right: 10px;
+		font-family: 'Segoe UI' !important;
+		margin-right: 10px !important;
+		color: #000 !important;
 	`;
 	
 	const link = document.createElement('link');
@@ -203,11 +206,11 @@ window.onload = () => {
 		
 		
 		closeBtn.innerHTML = `<i class='bx bx-x' style='width: fit-content; height: fit-content; margin-left: -3px;'></i>`;
-		closeBtn.setAttribute('style', `border-radius: 50%; cursor: pointer; z-index: 99999999; color: #fff; outline: none !important; border: none !important; width: 25px; height: 25px; background: #000; font-size: 20px; display: flex; align-items: center; text-align: center;`);
+		closeBtn.setAttribute('style', `border-radius: 50% !important; cursor: pointer !important; z-index: 99999999 !important; color: #fff !important; outline: none !important; border: none !important; width: 25px !important; height: 25px !important;  background: #000 !important; font-size:  20px !important; display: flex !important; align-items: center !important; text-align: center !important;`);
 		closeBtn.setAttribute('title', 'Close Tobelsoft Widget');
 		
-		githubLogo.innerHTML = `<i class='bx bxl-github' ></i>`;
-		githubLogo.setAttribute('style', 'position: absolute; z-index: 99999; overflow: hidden;');
+		githubLogo.innerHTML = `<i class='bx bxl-github'></i>`;
+		githubLogo.setAttribute('style', 'position: absolute !important; z-index: 9999999999999999999 !important; overflow: hidden !important; color: #000 !important; padding: 0 !important; border-radius: 50% !important !important; color: #000 !important background: #000 !important; position: fixed !important; height: 25px !important; height: 25px !important; color: #000 !important; background: transparent !important;');
 		
 		divContainer.appendChild(githubLogo);
 		divContainer.appendChild(closeBtn);
@@ -216,9 +219,8 @@ window.onload = () => {
 		
 		appendAttribute(right, 'style', rightSideStyle);
 		
-		
 		const name = document.createElement('div');
-		name.setAttribute('style', `font-weight: 700; letter-spacing: .9px; font-family: 'Segoe UI'; cursor: pointer; width: fit-content; height: fit-content;`);
+		name.setAttribute('style', `font-weight: 700 !important; letter-spacing: .9px !important; font-family: 'Segoe UI' !important; cursor: pointer !important; width: fit-content !important; height: fit-content !important; color: #000 !important;`);
 		name.innerText = user['name'];
 		right.appendChild(name);
 		
@@ -226,7 +228,7 @@ window.onload = () => {
 		{
 			bio = document.createElement('div');
 			bio.innerText = (customDescription === 'true' && description.length > 0) ? description.trim() : user['bio']; 
-			bio.setAttribute('style', `font-family: 'Segoe UI'; font-weight: 400; font-size: 13px; cursor: pointer;`);
+			bio.setAttribute('style', `font-family: 'Segoe UI' !important; font-weight: 400 !important; font-size: 13px !important; cursor: pointer !important; color: #000 !important;`);
 			right.appendChild(bio);
 		}
 		
@@ -245,9 +247,9 @@ window.onload = () => {
 		
 		
 		const avatarOnAnyEventStyle = `
-			box-shadow: none;
-			transform: rotate(5deg);
-			border: .5px solid #fff;
+			box-shadow: none !important;
+			transform: rotate(5deg) !important;
+			border: .5px solid #fff !important;
 		`;
 		
 		img.addEventListener('mouseover', () => {
@@ -258,14 +260,14 @@ window.onload = () => {
 			removeAttributeValue(img, 'style', avatarOnAnyEventStyle);
 		});
 		
-		appendAttribute(githubLogo, 'style', 'transition: .4s ease-in-out all;');
+		appendAttribute(githubLogo, 'style', 'transition: .4s ease-in-out all !important;');
 
 		githubLogo.addEventListener('click', (e) => {
 			e.preventDefault();
-			appendAttribute(githubLogo, 'style', 'transform: rotate(360deg);');
+			appendAttribute(githubLogo, 'style', 'transform: rotate(360deg) !important;');
 			setTimeout(function f(){
 				window.open(user['html_url'], '_blank');
-				removeAttributeValue(githubLogo, 'style', 'transform: rotate(360deg);');
+				removeAttributeValue(githubLogo, 'style', 'transform: rotate(360deg) !important;');
 				clearTimeout(f);
 			}, 400);
 		});
@@ -315,20 +317,23 @@ window.onload = () => {
 		
 		const containerWidth = divContainer.offsetWidth;
 		const containerHeight = divContainer.offsetHeight;
+		appendAttribute(githubLogo, 'style', 'width: 25px !important; height: 25px !important; background: #fff !important; border-radius: 50% !important;');
+		appendAttribute(githubLogo, 'class', 'gh-logo');
+		document.querySelector('.gh-logo i').setAttribute('style', 'color: #000 !important; width: 25px !important; height: 25px !important; font-size: 27px; top: 0 !important; position: relative !important; display: flex !important; margin-left: -2px !important; padding: 0 !important; top: -1px !important; border-radius: 50% !important; padding-bottom: -2px !important;');
 		
 		if(pos === 'top-right')
 		{
-			appendAttribute(divContainer, 'style', 'top: 10px; right: 10px; margin-left: 20px;');
-			appendAttribute(githubLogo, 'style', 'top: 50px; right: 20px; font-size: 20px; position: fixed; border-radius: 50%; overflow: hidden; background: #fff; cursor: pointer; top: ' + (containerHeight - 15).toString() + 'px;');
-			appendAttribute(closeBtn, 'style', 'position: fixed; top: 5px; margin-left: -25px;');
+			appendAttribute(divContainer, 'style', 'top: 10px !important; right: 10px !important; margin-left: 20px !important;');
+			appendAttribute(githubLogo, 'style', 'top: 50px !important; right: 20px !important; font-size: 20px !important; position: fixed !important; border-radius: 50% !important; overflow: hidden !important; background: #fff !important; cursor: pointer !important; top: ' + (containerHeight - 15).toString() + 'px !important;');
+			appendAttribute(closeBtn, 'style', 'position: fixed !important; top: 5px !important; margin-left: -25px !important;');
 			
 			closeBtn.addEventListener('click', (e) => {
-				closeBtn.innerHTML = `<i class='bx bx-loader-circle' style='width: fit-content; height: fit-content; margin-left: -3.5px; margin-top: -0.2px'></i>`;
-				appendAttribute(closeBtn, 'style', 'transition: 4s ease-in-out all; transform: rotate(5000deg);');
-				appendAttribute(divContainer, 'style', 'right: 100px');
+				closeBtn.innerHTML = `<i class='bx bx-loader-circle' style='width: fit-content !important; height: fit-content !important; margin-left: -3.5px !important; margin-top: -0.2px !important;'></i>`;
+				appendAttribute(closeBtn, 'style', 'transition: 4s ease-in-out all !important; transform: rotate(5000deg) !important;');
+				appendAttribute(divContainer, 'style', 'right: 100px !important;');
 				githubLogo.remove();
 				setTimeout(function (f) {
-					appendAttribute(divContainer, 'style', 'position: absolute; right: -5000px;');
+					appendAttribute(divContainer, 'style', 'position: absolute !important; right: -5000px !important;');
 					setTimeout(function g() {
 						divContainer.remove();
 						clearTimeout(f);
@@ -338,18 +343,18 @@ window.onload = () => {
 			});
 		} else if(pos === 'top-left')
 		{
-			appendAttribute(divContainer, 'style', 'top: 10px; left: 10px; margin-right: 20px;');
-			appendAttribute(githubLogo, 'style', 'top: 5px; left: 5px; font-size: 20px; position: fixed; border-radius: 50%; overflow: hidden; background: #fff; cursor: pointer; left: ' + (containerWidth - 40).toString() + 'px; z-index: 9999999999999999999; top: ' + (containerHeight - 15).toString() + 'px;');
-			appendAttribute(closeBtn, 'style', 'position: fixed; top: 5px; left: ' + (containerWidth - 25).toString() + 'px;');
+			appendAttribute(divContainer, 'style', 'top: 10px !important; left: 10px !important; margin-right: 20px !important;');
+			appendAttribute(githubLogo, 'style', 'top: 5px !important; left: 5px !important; font-size: 20px !important; position: fixed !important; border-radius: 50% !important; overflow: hidden !important; background: #fff !important; cursor: pointer !important; left: ' + (containerWidth - 47).toString() + 'px !important; z-index: 9999999999999999999 !important; top: ' + (containerHeight - 17).toString() + 'px !important;');
+			appendAttribute(closeBtn, 'style', 'position: fixed !important; top: 5px !important; left: ' + (containerWidth - 25).toString() + 'px !important;');
 			
 			closeBtn.addEventListener('click', (e) => {
 				e.preventDefault();
-				closeBtn.innerHTML = `<i class='bx bx-loader-circle' style='width: fit-content; height: fit-content; margin-left: -3.5px; margin-top: -0.2px'></i>`;
-				appendAttribute(closeBtn, 'style', 'transition: 4s ease-in-out all; transform: rotate(5000deg);');
-				appendAttribute(divContainer, 'style', 'left: 100px');
+				closeBtn.innerHTML = `<i class='bx bx-loader-circle' style='width: fit-content !important; height: fit-content !important; margin-left: -3.5px !important; margin-top: -0.2px !important'></i>`;
+				appendAttribute(closeBtn, 'style', 'transition: 4s ease-in-out all !important; transform: rotate(5000deg) !important;');
+				appendAttribute(divContainer, 'style', 'left: 100px !important;');
 				githubLogo.remove();
 				setTimeout(function (f) {
-					appendAttribute(divContainer, 'style', 'position: absolute; left: -5000px;');
+					appendAttribute(divContainer, 'style', 'position: absolute !important; left: -5000px !important;');
 					setTimeout(function g() {
 						divContainer.remove();
 						clearTimeout(f);
@@ -360,17 +365,17 @@ window.onload = () => {
 			
 		} else if(pos === 'bottom-right')
 		{
-			appendAttribute(divContainer, 'style', 'bottom: 10px; right: 10px; margin-left: 20px;');
-			appendAttribute(githubLogo, 'style', 'font-size: 20px; position: fixed; border-radius: 50%; overflow: hidden; background: #fff; cursor: pointer; z-index: 9999999999999; bottom: 15px; right: 15px;');
-			appendAttribute(closeBtn, 'style', 'position: fixed; bottom: ' + (containerHeight - 5).toString() + 'px; right: ' + (containerWidth - 25).toString() + 'px;');
+			appendAttribute(divContainer, 'style', 'bottom: 10px !important; right: 10px !important; margin-left: 20px !important;');
+			appendAttribute(githubLogo, 'style', 'font-size: 20px !important; position: fixed !important; border-radius: 50% !important; overflow: hidden !important; background: #fff !important; cursor: pointer !important; z-index: 9999999999999 !important; bottom: 15px !important; right: 15px !important;');
+			appendAttribute(closeBtn, 'style', 'position: fixed !important; bottom: ' + (containerHeight - 5).toString() + 'px !important; right: ' + (containerWidth - 25).toString() + 'px !important;');
 			
 			closeBtn.addEventListener('click', (e) => {
-				closeBtn.innerHTML = `<i class='bx bx-loader-circle' style='width: fit-content; height: fit-content; margin-left: -3.5px; margin-top: -0.2px'></i>`;
-				appendAttribute(closeBtn, 'style', 'transition: 4s ease-in-out all; transform: rotate(5000deg);');
-				appendAttribute(divContainer, 'style', 'right: 100px');
+				closeBtn.innerHTML = `<i class='bx bx-loader-circle' style='width: fit-content !important; height: fit-content !important; margin-left: -3.5px !important; margin-top: -0.2px !important;'></i>`;
+				appendAttribute(closeBtn, 'style', 'transition: 4s ease-in-out all !important; transform: rotate(5000deg) !important;');
+				appendAttribute(divContainer, 'style', 'right: 100px !important');
 				githubLogo.remove();
 				setTimeout(function (f) {
-					appendAttribute(divContainer, 'style', 'position: absolute; right: -5000px;');
+					appendAttribute(divContainer, 'style', 'position: absolute !important; right: -5000px !important;');
 					setTimeout(function g() {
 						divContainer.remove();
 						clearTimeout(f);
@@ -380,18 +385,18 @@ window.onload = () => {
 			});
 		} else if(pos === 'bottom-left')
 		{
-			appendAttribute(divContainer, 'style', 'bottom: 10px; left: 10px; margin-right: 20px;');
-			appendAttribute(githubLogo, 'style', 'font-size: 20px; position: fixed; border-radius: 50%; overflow: hidden; background: #fff; cursor: pointer; z-index: 99999999999999; left: ' + (containerWidth - 40).toString() + 'px; bottom: ' + (containerHeight - 45).toString() + 'px;');
-			appendAttribute(closeBtn, 'style', 'position: fixed; cursor: pointer; z-index: 999999999999999999999; bottom: ' + (containerHeight - 5).toString() + 'px; left: ' + (containerWidth - 30).toString() + 'px;');
+			appendAttribute(divContainer, 'style', 'bottom: 10px !important; left: 10px !important; margin-right: 20px !important;');
+			appendAttribute(githubLogo, 'style', 'font-size: 20px !important; position: fixed !important; border-radius: 50% !important; overflow: hidden !important; background: #fff !important; cursor: pointer !important; z-index: 99999999999999 !important; left: ' + (containerWidth - 47).toString() + 'px !important; bottom: ' + (containerHeight - 45).toString() + 'px !important;');
+			appendAttribute(closeBtn, 'style', 'position: fixed !important; cursor: pointer !important; z-index: 999999999999999999999 !important; bottom: ' + (containerHeight - 5).toString() + 'px !important; left: ' + (containerWidth - 30).toString() + 'px !important;');
 			
 				closeBtn.addEventListener('click', (e) => {
 				e.preventDefault();
-				closeBtn.innerHTML = `<i class='bx bx-loader-circle' style='width: fit-content; height: fit-content; margin-left: -3.5px; margin-top: -0.2px'></i>`;
-				appendAttribute(closeBtn, 'style', 'transition: 4s ease-in-out all; transform: rotate(5000deg);');
-				appendAttribute(divContainer, 'style', 'left: 100px');
+				closeBtn.innerHTML = `<i class='bx bx-loader-circle' style='width: fit-content !important; height: fit-content !important; margin-left: -3.5px !important; margin-top: -0.2px !important;'></i>`;
+				appendAttribute(closeBtn, 'style', 'transition: 4s ease-in-out all !important; transform: rotate(5000deg) !important;');
+				appendAttribute(divContainer, 'style', 'left: 100px !important');
 				githubLogo.remove();
 				setTimeout(function (f) {
-					appendAttribute(divContainer, 'style', 'position: absolute; left: -5000px;');
+					appendAttribute(divContainer, 'style', 'position: absolute !important; left: -5000px !important;');
 					setTimeout(function g() {
 						divContainer.remove();
 						clearTimeout(f);

@@ -1,0 +1,148 @@
+:root {
+    --color-blue:  #3BE6F5;
+}
+
+* {
+    box-sizing: border-box;
+    color: #fff;
+    transition: 0.2s ease-in-out all;
+}
+
+body {
+    overflow: hidden;
+}
+
+body,html {
+    top: 0;
+    left: 0;
+    overflow-x:  hidden;
+    opacity:  1;
+    background:  transparent;
+}
+
+html {
+    background: #000;
+}
+
+.container {
+    height: 100vh;
+}
+
+section#home {
+    height: 100vh;
+    overflow: hidden;
+}
+
+section#home .scrolltodown{
+    outline:  none !important;
+    border: none !important;
+    background: transparent;
+    cursor: pointer;
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    margin: auto;
+    margin-top: 100px;
+}
+
+section#home .scrolltodown i {
+    color:  #3BE6F5;
+    font-size:  120px;
+}
+
+a {
+    text-decoration:  none !important;
+}
+
+section#docs {
+    bakcground: red;
+    padding: 5px;
+}
+
+.first-primary-text {
+    font-weight: 900;
+}
+
+.second-primary-text {
+    font-weight: 500;
+    color: #CDCDCD;
+}
+
+kbd {
+    color: #3BE6F5;
+    font-weight: 900;
+}
+
+a.coffe {
+    display: flex;
+    align-items: center;
+    text-decoration: none !important;
+    color: #fff;
+    cursor: pointer;
+    height: 100px;
+}
+
+a.coffe i {
+    font-size: 40px;
+    margin-right: 10px;
+}
+
+.dd > div:nth-child(1) {
+    background: rgba(35, 148, 67, 0);
+}
+
+.dd > div:nth-child(1):hover {
+    background: rgba(35, 148, 67, 1);
+    z-index: 6;
+    box-shadow: 2px 2px 2px #000;
+}
+
+.gh {
+    background: rgba(97, 156, 242, 0);
+}
+
+.gh:hover {
+    background: rgba(97, 156, 242, 1);
+    z-index: 6;
+    box-shadow: 2px 2px 2px #000;
+}
+
+.gh .left {
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.gh .left img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+}
+
+.gh .right {
+    display: flex;
+    align-items: center;
+}
+
+.gh .right i {
+    font-size: 40px;
+}
+
+.resume {
+    background: rgba(193, 59, 46, 0);
+    height: 100px;
+    margin: auto;
+}
+
+.resume:hover {
+    background: rgba(193, 59, 46, 1);
+    z-index: 6;
+    box-shadow: 2px 2px 2px #000;
+}
+
+.resume i {
+    font-size: 40px;
+    margin-right: 10px;
+}
