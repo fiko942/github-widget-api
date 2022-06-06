@@ -24,10 +24,6 @@ html {
     background: #000;
 }
 
-.container {
-    height: 100vh;
-}
-
 section#home {
     height: 100vh;
     overflow: hidden;
@@ -145,4 +141,20 @@ a.coffe i {
 .resume i {
     font-size: 40px;
     margin-right: 10px;
+}
+
+#footer {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background: #272E48;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    margin-top: 30px;
+    border-top: 1px solid #5969F3;
+}
+
+#footer .getit {
+    margin-left: 10px;
+    font-weight: 500 !important;
 }

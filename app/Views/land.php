@@ -106,7 +106,11 @@
                 </table>
             </div>
         </section>
+       
     </div>
+    <section id="footer">
+        <div class="font-monospace getit fs-5 d-flex justify-content-center align-items-center text-light">Copyright &copy; 2022 <a href="https://resume.tobelsoft.my.id" target="_blank" class="link-info" style="margin-left: 10px;">Wiji Fiko Teren</a></div>
+    </section>
     <script src="<?= base_url('vendor/jquery.js') ?>"></script>
     <script src="<?= base_url('vendor/bootstrap/js/bootstrap.bundle.min.js') ?>"></script>
     <script src="<?= base_url('assets/js/landing-page.js?q=' . $random_string); ?>"></script>
