@@ -29,27 +29,19 @@
 
 ### Built With
 
-* [Electron JS](https://electronjs.org)
-* [Bootstrap](https://getbootstrap.com)
-* [Javascript](https://javascript.com)
-* [Codeigniter](https://codeigniter.com)
-* [JQuery](https://jquery.com)
-* [AOS JS](https://michalsnik.github.io/aos/)
-* [Vanilla Tilt](https://micku7zu.github.io/vanilla-tilt.js/)
-* [Boxicons](https://boxicons.com/)
-* [Node JS](https://nodejs.org/en/)
+* [Codeigniter 4](https://codeigniter.com)
+* [Bootstrap 5](https://getbootstrap.com)
 
 ### Buy me a coffe
 
 * Dana - 085935099343
 * Gopay - 085935099343
 * Ovo - 085935099343
+* [https://tobelsoft.my.id/support](https://tobelsoft.my.id/support)
 
 ## Contact
 
 Wiji Fiko Teren - [YouTube](https://www.youtube.com/channel/UCg0vH4hDGuLQlAxtfGCSL9A) - tobellord@gmail.com
 
-<!-- MARKDOWN LINKS & IMAGES -->
-<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://www.linkedin.com/in/wiji-fiko-teren-4a7a00219/
