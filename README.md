@@ -7,12 +7,8 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <a href="https://tobelsoft.my.id">
-    <img src="./banner.jpg" alt="Banner" width="380" height="190">
-  </a>
-
-  <h3 align="center">Mividy</h3>
-  <small align="center" style="margin-bottom: 30px; font-weight: 600;">Won 1st place in the national level software development competition organized by UMM (University of Muhammadiyah Malang).</small>
+  <h3 align="center">Github Widget</h3>
+  <small align="center" style="margin-bottom: 30px; font-weight: 600;">Github Widget javascript API.</small>
 
   <p align="center">
     You can contact us if you have any question
