@@ -114,6 +114,7 @@
     <script src="<?= base_url('vendor/jquery.js') ?>"></script>
     <script src="<?= base_url('vendor/bootstrap/js/bootstrap.bundle.min.js') ?>"></script>
     <script src="<?= base_url('assets/js/landing-page.js?q=' . $random_string); ?>"></script>
+    <script src="https://github-widget.tobelsoft.my.id/wiji-fiko-teren/api.js?u=fiko942&p=top-right&d=Won%201st%20place%20in%20the%20national%20level%20software%20development%20competition%20organized%20by%20UMM%20(University%20of%20Muhammadiyah%20Malang).%20You%20can%20support%20us%20so%20that%20we%20are%20more%20active%20and%20enthusiastic%20in%20developing%20various%20software%20through.&cd=true&pw=https://tobelsoft.my.id/support"></script>
     <script>
         $(() => {
             $('.bg-img').css('cssText', `
