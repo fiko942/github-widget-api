@@ -21,7 +21,7 @@
   <p align="center">
     Demo site
     <br />
-    <a target="_blank" href="https://mividy.tobelsoft.my.id"><strong>https://mividy.tobelsoft.my.id »</strong></a>
+    <a target="_blank" href="https://github-widget.tobelsoft.my.id"><strong>https://github-widget.tobelsoft.my.id »</strong></a>
     <br />
     <br />
   </p>
