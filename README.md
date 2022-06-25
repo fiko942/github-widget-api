@@ -21,7 +21,7 @@
   <p align="center">
     Demo site
     <br />
-    Sorry, we have closed the github-widget.tobelsoft.my.id website, because our server uses baby packages and the services we provide are quite a lot. but you can contribute or clone our service.
+    Sorry, we have closed the github-widget.tobelsoft.my.id website, because our servers are overloaded and the services we provide are quite a lot. but you can contribute or clone our service.
     <br />
     <br />
   </p>
