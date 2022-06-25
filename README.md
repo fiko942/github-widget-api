@@ -21,7 +21,7 @@
   <p align="center">
     Demo site
     <br />
-    <a target="_blank" href="https://github-widget.tobelsoft.my.id"><strong>https://github-widget.tobelsoft.my.id »</strong></a>
+    Sorry, we have closed the github-widget.tobelsoft.my.id website, because our server uses baby packages and the services we provide are quite a lot. but you can contribute or clone our service.
     <br />
     <br />
   </p>
