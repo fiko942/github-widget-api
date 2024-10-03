@@ -34,9 +34,7 @@
 
 ### Buy me a coffe
 
-* Dana - 085935099343
-* Gopay - 085935099343
-* Ovo - 085935099343
+* Gopay - 085733666741
 * [https://tobelsoft.my.id/support](https://tobelsoft.my.id/support)
 
 ## Contact
